@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import EmailSignup from '../components/EmailSignup.vue';
+---
+
+
+<Layout>
+<main class="flex flex-col items-center px-4 py-20 space-y-16 bg-[#f5f7fa] dark:bg-[#121212] overflow-hidden font-sans">
+  <section class="animate-in fade-in duration-700 md:p-12 w-full max-w-4xl bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-xl dark:shadow-lg border-t-4 border-orange-500">
+    <h1 class="text-4xl font-extrabold text-blue-800 dark:text-orange-400 text-center mb-6">
+      ¡Conecta sin límites con ViaConecta!
+    </h1>
+    <p class="max-w-2xl m-auto text-center text-lg text-gray-600 dark:text-gray-300 mb-8">
+      Disfruta de planes innovadores con zero-rating, cashback y acceso móvil en Bogotá.
+      En ViaConecta creemos que la conectividad debe ser accesible para todos, sin restricciones ni sorpresas.
+    </p>
+    <EmailSignup client:load />
+  </section>
+
+  <section class="fade-in duration-500 w-full max-w-3xl flex flex-col items-center border border-gray-200 dark:border-gray-700 rounded-2xl bg-white dark:bg-gray-900 p-8 shadow-lg dark:shadow-md hover:shadow-xl dark:hover:shadow-xl transition-transform hover:scale-105 transform-gpu will-change-transform my-6">
+    <div class="h-1 w-16 bg-orange-500 rounded-full mb-4"></div>
+    <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-4 border-b-2 border-orange-500">Nuestra Misión</h2>
+    <p class="text-gray-600 dark:text-gray-300 text-center text-base leading-relaxed">
+      Transformamos la conectividad en Bogotá con planes únicos, QR-códigos y beneficios para ti.
+    </p>
+  </section>
+
+  <section class="fade-in duration-500 w-full max-w-3xl flex flex-col items-center border border-gray-200 dark:border-gray-700 rounded-2xl bg-white dark:bg-gray-900 p-8 shadow-lg dark:shadow-md hover:shadow-xl dark:hover:shadow-xl transition-transform hover:scale-105 transform-gpu will-change-transform my-6">
+    <div class="h-1 w-16 bg-orange-500 rounded-full mb-4"></div>
+    <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-4 border-b-2 border-orange-500">Nuestra Visión</h2>
+    <p class="text-gray-600 dark:text-gray-300 text-center text-base leading-relaxed">
+      Conectar a todos en América Latina con tecnología accesible que cambia vidas.
+    </p>
+  </section>
+
+  <section class="fade-in duration-500 w-full max-w-3xl flex flex-col items-center border border-gray-200 dark:border-gray-700 rounded-2xl bg-white dark:bg-gray-900 p-8 shadow-lg dark:shadow-md hover:shadow-xl dark:hover:shadow-xl transition-transform hover:scale-105 transform-gpu will-change-transform my-6">
+    <div class="h-1 w-16 bg-orange-500 rounded-full mb-4"></div>
+    <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-8 border-b-2 border-orange-500">Nuestros Valores</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md border dark:border-gray-600 transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-orange-100 transform-gpu will-change-transform">
+        <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-1">Innovación</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-snug">
+          Creamos conexiones que sorprenden y simplifican tu día.
+        </p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md border dark:border-gray-600 transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-orange-100 transform-gpu will-change-transform">
+        <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-1">Accesibilidad</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-snug">
+          Internet para todos, sin complicaciones ni barreras.
+        </p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md border dark:border-gray-600 transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-orange-100 transform-gpu will-change-transform">
+        <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-1">Sostenibilidad</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-snug">
+          Construimos un futuro conectado con responsabilidad.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+</Layout>
+
