@@ -1,9 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import EmailSignup from '../components/EmailSignup.vue';
+import Layout from '../../layouts/Layout.astro';
+import EmailSignup from '../../components/EmailSignup.vue';
 
-import es from '../locales/es.json';
-import en from '../locales/en.json';
+import es from '../../locales/es.json';
+import en from '../../locales/en.json';
 
 const lang = Astro.params.lang || 'es';
 const t = lang === 'en' ? en : es;

@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "noticias": "Noticias",
+    "tarifas": "Tarifas",
+    "socios": "Socios",
+    "sobreNosotros": "Sobre Nosotros",
+    "privacidad": "Política de Privacidad",
+    "temaOscuro": "🌙 Modo oscuro",
+    "temaClaro": "🌞 Modo claro",
+    "idioma": "Idioma"
+  },
+  "footer": {
+    "descripcion": "MBBQ, tu nuevo MVNO en Bogotá.",
+    "enlaces": "Enlaces",
+    "contacto": "Contacto",
+    "email": "Email",
+    "derechos": "MBBQ © 2025 Todos los derechos reservados."
+  },
+  "index": {
+    "heroTitle": "¡Conecta sin límites con MBBQ!",
+    "heroDesc": "Planes móviles innovadores con <strong>zero-rating</strong>, <strong>cashback</strong> y cobertura nacional en Bogotá. En MBBQ, creemos en una conectividad <span class=\"underline decoration-orange-400/50\">accesible y sin complicaciones</span> para todos.",
+    "misionTitle": "Nuestra Misión",
+    "misionDesc": "Revolucionamos la conectividad en Bogotá con <strong>planes únicos</strong>, <strong>QR-códigos</strong> y <strong>beneficios personalizados</strong> que se adaptan a tu estilo de vida.",
+    "visionTitle": "Nuestra Visión",
+    "visionDesc": "Conectar a las personas en América Latina con <strong>tecnología accesible</strong> que genere oportunidades y transforme comunidades.",
+    "valoresTitle": "Nuestros Valores",
+    "innovacion": {
+      "title": "Innovación",
+      "desc": "Creamos soluciones móviles que simplifican y sorprenden."
+    },
+    "accesibilidad": {
+      "title": "Accesibilidad",
+      "desc": "Tecnología sin barreras. Conectividad para todos, en todo momento."
+    },
+    "sostenibilidad": {
+      "title": "Sostenibilidad",
+      "desc": "Construimos un futuro digital responsable, ético y duradero."
+    }
+  },
+  "noticias": {
+    "title": "Noticias de MBBQ",
+    "desc": "¡<span class=\"font-medium\">Pronto tendremos novedades</span>! Mantente atento a nuestras actualizaciones sobre el lanzamiento de <span class=\"underline decoration-orange-400/50\">MBBQ</span> en <strong class=\"text-blue-800 dark:text-orange-300\">2025</strong>."
+  },
+  "tarifas": {
+    "title": "Tarifas",
+    "desc": "Descubre nuestros futuros planes móviles diseñados para Bogotá. Tarifas con <strong>zero-rating</strong>, <strong>cashback</strong> y beneficios exclusivos. Disponible en 2025. ¡Mantente conectado!",
+    "planesTitle": "Nuestros Planes Futuros",
+    "planesDesc": "Conoce los planes que estamos preparando para el lanzamiento oficial.",
+    "aviso": "Estos planes son ejemplos. Los detalles finales se confirmarán en 2025*.",
+    "planBasico": {
+      "title": "Plan Básico",
+      "desc": "Conectividad esencial sin complicaciones.",
+      "features": [
+        "1 GB de datos con zero-rating para apps seleccionadas",
+        "100 minutos de llamadas locales",
+        "Cashback del 5% en recargas"
+      ]
+    },
+    "planEstandar": {
+      "title": "Plan Estándar",
+      "desc": "Ideal para redes sociales, contenido y llamadas.",
+      "features": [
+        "5 GB de datos con zero-rating para apps seleccionadas",
+        "300 minutos de llamadas locales",
+        "Cashback del 10% en recargas"
+      ]
+    },
+    "planPremium": {
+      "title": "Plan Premium",
+      "desc": "Máxima conectividad para profesionales y viajeros.",
+      "features": [
+        "10 GB de datos con zero-rating para apps seleccionadas",
+        "Llamadas locales ilimitadas",
+        "Cashback del 15% en recargas"
+      ]
+    },
+    "preliminar": "*Tarifa preliminar, sujeta a cambios.",
+    "suscribirme": "¡Suscribirme al {{plan}}!"
+  },
+  "politica": {
+    "title": "Política de Privacidad",
+    "privacidad": "Tu privacidad es nuestra prioridad.",
+    "datosTitle": "Recopilación de Datos",
+    "datos": "En MBBQ recopilamos datos como tu correo electrónico para mejorar nuestros servicios, enviarte novedades y gestionar suscripciones. Esta recopilación se realiza bajo tu consentimiento explícito, cumpliendo con la Ley 1581 de 2012 en Colombia y el GDPR europeo.",
+    "usoTitle": "Uso de los Datos",
+    "uso": "Utilizamos tus datos para personalizar tu experiencia, gestionar comunicaciones y mejorar el rendimiento del sitio. No compartimos tus datos con terceros sin tu autorización, salvo obligación legal.",
+    "cookiesTitle": "Uso de Cookies",
+    "cookies": "Usamos cookies para mejorar tu navegación y analizar el tráfico del sitio. Puedes gestionarlas desde nuestro aviso de cookies. Las cookies analíticas solo se activan con tu consentimiento.",
+    "derechosTitle": "Tus Derechos",
+    "derechos": "Puedes acceder, corregir o eliminar tus datos, así como revocar tu consentimiento. También puedes solicitar la portabilidad de tus datos o presentar una queja ante una autoridad de protección de datos. Escríbenos a <a href=\"mailto:info@MBBQ.com\" class=\"text-blue-800 dark:text-orange-400 hover:underline\">info@MBBQ.com</a>.",
+    "seguridadTitle": "Seguridad de los Datos",
+    "seguridad": "Protegemos tus datos mediante cifrado SSL, autenticación segura y controles de acceso. Revisamos regularmente nuestras prácticas para garantizar tu seguridad.",
+    "contactoTitle": "Contacto",
+    "contacto": "Si tienes dudas sobre esta política o el uso de tus datos, puedes escribirnos a <a href=\"mailto:info@MBBQ.com\" class=\"text-blue-800 dark:text-orange-400 hover:underline\">info@MBBQ.com</a>. Respondemos en un máximo de 15 días hábiles."
+  },
+  "sobre": {
+    "title": "Sobre MBBQ",
+    "desc": "Somos un operador móvil virtual (MVNO) que redefine la conectividad en Bogotá a través de planes inteligentes, beneficios exclusivos y una visión innovadora del futuro digital.",
+    "historiaTitle": "Nuestra Historia",
+    "historia": "Fundada en 2025, MBBQ nació con una misión clara: transformar el acceso móvil combinando tecnología avanzada, simplicidad y beneficios reales como zero-rating y recompensas por uso. Queremos cambiar la forma en que las personas se conectan y se benefician del mundo digital.",
+    "equipoTitle": "Nuestro Equipo",
+    "equipo": "Somos un equipo joven, multidisciplinario y motivado por la innovación. Desde expertos en telecomunicaciones hasta creativos digitales, todos compartimos la misma pasión: acercar la tecnología a las personas y construir un futuro más conectado, justo y sostenible para América Latina."
+  },
+  "socios": {
+    "title": "Socios",
+    "desc1": "En <span class=\"font-semibold text-blue-900 dark:text-orange-400\">MBBQ</span> estamos abiertos a <span class=\"italic\">alianzas estratégicas, colaboraciones innovadoras</span> e <span class=\"underline decoration-orange-400/50\">inversiones</span> que impulsen nuestro crecimiento conjunto.",
+    "desc2": "Si eres una <strong>empresa, startup, entidad financiera</strong> o <strong>inversor</strong> interesado en formar parte de nuestra visión de conectividad inteligente en América Latina, <span class=\"font-medium text-blue-700 dark:text-orange-300\">contáctanos</span>. Hablemos y construyamos juntos el futuro.",
+    "email": "MBBQco@gmail.com"
+  }
+}

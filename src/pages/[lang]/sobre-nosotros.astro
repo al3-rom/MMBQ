@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import es from '../../locales/es.json';
+import en from '../../locales/en.json';
+
+// Usar params.lang para rutas tipo /es/... o /en/...
+const lang = Astro.params.lang || 'es';
+const t = lang === 'en' ? en : es;
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } }
+  ];
+}
+---
+
+<Layout>
+  <main class="flex flex-col items-center px-4 py-20 space-y-16 bg-[#f5f7fa] dark:bg-[#121212] text-gray-800 dark:text-gray-200 font-sans">
+
+    <!-- Introducción -->
+    <section class="animate-in fade-in duration-700 w-full max-w-3xl bg-white dark:bg-gray-900 rounded-2xl shadow-xl border-t-4 border-orange-500 dark:border-orange-400 p-8">
+      <div class="h-1 w-16 bg-orange-500 dark:bg-orange-400 rounded-full mb-4 mx-auto"></div>
+      <h1 class="text-4xl font-extrabold text-blue-800 dark:text-orange-400 text-center mb-4">
+        {t.sobre.title}
+      </h1>
+      <p class="text-center text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+        {t.sobre.desc}
+      </p>
+    </section>
+
+    <!-- Contenido -->
+    <section class="w-full max-w-3xl space-y-12 text-base leading-relaxed">
+
+      <!-- Historia -->
+      <div class="animate-in fade-in duration-700 w-full flex flex-col">
+        <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-2 border-b-2 border-orange-500 dark:border-orange-400 inline-block">
+          {t.sobre.historiaTitle}
+        </h2>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">
+          {t.sobre.historia}
+        </p>
+      </div>
+
+      <!-- Equipo -->
+      <div class="animate-in fade-in  duration-700 w-full flex flex-col">
+        <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-2 border-b-2 border-orange-500 dark:border-orange-400 inline-block">
+          {t.sobre.equipoTitle}
+        </h2>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">
+          {t.sobre.equipo}
+        </p>
+      </div>
+    </section>
+
+  </main>
+</Layout>

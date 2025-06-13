@@ -1,6 +1,6 @@
 <template>
   <div class="text-gray-700 dark:text-gray-100 flex items-center gap-2">
-    <label for="lang" class="text-sm font-medium md:hidden">Idioma:</label>
+    <label for="lang" class="text-sm font-medium md:hidden">{{ label || 'Idioma:' }}</label>
     <select
       id="lang"
       v-model="locale"
@@ -14,11 +14,38 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 
-const locale = ref('es')
+const props = defineProps({
+  lang: { type: String, default: 'es' },     
+  label: { type: String, default: '' }      
+})
+
+const locale = ref(props.lang)
+
+watch(() => props.lang, (newLang) => {
+  locale.value = newLang
+})
+
+onMounted(() => {
+  if (window.location.pathname.startsWith('/en')) {
+    locale.value = 'en'
+  } else {
+    locale.value = 'es'
+  }
+})
 
 function onLocaleChange() {
- 
+  const currentPath = window.location.pathname
+  // Detecta si ya hay /es o /en al inicio y lo reemplaza correctamente
+  let newPath = currentPath.replace(/^\/(es|en)/, '')
+
+  if (locale.value === 'en') {
+    newPath = '/en' + (newPath === '/' ? '' : newPath)
+  } else {
+    newPath = '/es' + (newPath === '/' ? '' : newPath)
+  }
+
+  window.location.pathname = newPath
 }
 </script>

@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import es from '../../locales/es.json';
+import en from '../../locales/en.json';
+
+const lang = Astro.params.lang || 'es';
+const t = lang === 'en' ? en : es;
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } }
+  ];
+}
+---
+
+<Layout>
+  <main class="flex flex-col items-center px-4 py-20 bg-[#f5f7fa] dark:bg-[#121212] text-gray-800 dark:text-gray-200 font-sans">
+    <section class="animate-in fade-in slide-in-from-bottom duration-700 w-full max-w-3xl bg-white dark:bg-gray-900 rounded-2xl shadow-xl border-t-4 border-orange-500 dark:border-orange-400 p-10 text-center">
+      <div class="h-1 w-16 bg-orange-500 dark:bg-orange-400 rounded-full mb-6 mx-auto"></div>
+
+      <h1 class="text-4xl font-extrabold text-blue-800 dark:text-orange-400 mb-6 tracking-tight">
+        {t.socios.title}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-light mb-6" set:html={t.socios.desc1} />
+      <p class="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-light" set:html={t.socios.desc2} />
+
+      <p class="mt-8">
+        <a href={`mailto:${t.socios.email}`} class="text-orange-500 font-semibold hover:underline text-lg">
+          {t.socios.email}
+        </a>
+      </p>
+    </section>
+  </main>
+</Layout>

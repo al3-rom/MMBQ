@@ -1,6 +1,11 @@
 ---
 import Footer from "./Footer.astro"
 import Nav from "./Nav.astro"	
+import es from '../locales/es.json';
+import en from '../locales/en.json';
+
+const lang = Astro.url.pathname.startsWith('/en') ? 'en' : 'es';
+const t = lang === 'en' ? en : es;
 ---
 <!doctype html>
 <html lang="en">
@@ -19,9 +24,8 @@ import Nav from "./Nav.astro"
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>ViaConecta - Conecta sin límites</title>
+    <title>MBBQ - Conecta sin límites</title>
     <link rel="icon" href="/VC-cloud-orange.ico" type="/favicon.ico"/>
     
    

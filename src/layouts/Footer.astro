@@ -1,40 +1,42 @@
+---
+const lang = Astro.params.lang || 'es'; 
+import es from '../locales/es.json';
+import en from '../locales/en.json';
+
+const t = lang === 'en' ? en : es;
+---
+
 <footer class="border-t-2 border-orange-500 dark:border-orange-400 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 transition-colors duration-300">
   <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
 
     <div class="flex flex-col items-start space-y-2">
-      <img src="/VCpnglogo150.png" alt="ViaConecta Logo" class="h-20 w-auto transition-transform duration-300 hover:scale-110" />
-      <p class="text-sm">ViaConecta, tu nuevo MVNO en Bogotá.</p>
+      <img src="/MMBQ.png" alt="MBBQ Logo" class="h-20 w-auto transition-transform duration-300 hover:scale-110" />
+      <p class="text-sm">{t.footer.descripcion}</p>
     </div>
 
-   
     <div>
-      <h4 class="text-lg font-bold text-blue-800 dark:text-orange-400 mb-2 uppercase">Enlaces</h4>
+      <h4 class="text-lg font-bold text-blue-800 dark:text-orange-400 mb-2 uppercase">{t.footer.enlaces}</h4>
       <ul class="space-y-1 text-sm">
-        <li><a href="/" class="hover:underline">Inicio</a></li>
-        <li><a href="/sobre-nosotros" class="hover:underline">Sobre Nosotros</a></li>
-        <li><a href="/noticias" class="hover:underline">Noticias</a></li>
-        <li><a href="/tarifas" class="hover:underline">Tarifas</a></li>
-        <li><a href="/socios" class="hover:underline">Socios</a></li>
-        <li><a href="/politica-privacidad" class="hover:underline">Política de Privacidad</a></li>
+        <li><a href={`/${lang}`} class="hover:underline">{t.nav.inicio}</a></li>
+        <li><a href={`/${lang}/sobre-nosotros`} class="hover:underline">{t.nav.sobreNosotros}</a></li>
+        <li><a href={`/${lang}/noticias`} class="hover:underline">{t.nav.noticias}</a></li>
+        <li><a href={`/${lang}/tarifas`} class="hover:underline">{t.nav.tarifas}</a></li>
+        <li><a href={`/${lang}/socios`} class="hover:underline">{t.nav.socios}</a></li>
+        <li><a href={`/${lang}/politica-privacidad`} class="hover:underline">{t.nav.privacidad}</a></li>
       </ul>
     </div>
 
-  
     <div class="flex flex-col space-y-2">
-      <h4 class="text-lg font-bold text-blue-800 dark:text-orange-400 mb-2 uppercase">Contacto</h4>
+      <h4 class="text-lg font-bold text-blue-800 dark:text-orange-400 mb-2 uppercase">{t.footer.contacto}</h4>
       <p class="text-base">
-        Email: <a href="mailto:info@viaconecta.com" class="hover:underline">info@viaconecta.com</a>
+        {t.footer.email}: <a href="mailto:info@MBBQ.com" class="hover:underline">info@MBBQ.com</a>
       </p>
       <div class="flex space-x-4 mt-2">
-      
         <a href="https://www.facebook.com/people/Via-Conecta/pfbid0ctZgz1hNgpviEEUoaibBpZ5BZBo8i4DCMxUq2aCutoweUdHKJFm48MMEXCY1xmyTl/" aria-label="Facebook" class="hover:text-blue-600 dark:hover:text-white transition-colors">
-          <img  src="/FacebookIcon.png"
-          alt="Facebook"
-          class="w-10 h-10 transition-transform hover:scale-110 dark:invert" />
+          <img src="/FacebookIcon.png" alt="Facebook" class="w-10 h-10 transition-transform hover:scale-110 dark:invert" />
         </a>
-       
-        <a href="https://www.instagram.com/viaconecta.co/?igsh=MWUyanhrbmo2eTVjdw%3D%3D#" aria-label="Instagram" class="hover:text-pink-500 dark:hover:text-white transition-colors">
-          <img src="/InstagramIcon.png" alt="Instagram" class="w-10 h-10 transition-transform hover:scale-110 dark:invert">
+        <a href="https://www.instagram.com/MMBQ.co/?igsh=MWUyanhrbmo2eTVjdw%3D%3D#" aria-label="Instagram" class="hover:text-pink-500 dark:hover:text-white transition-colors">
+          <img src="/InstagramIcon.png" alt="Instagram" class="w-10 h-10 transition-transform hover:scale-110 dark:invert" />
         </a>
       </div>
     </div>
@@ -44,7 +46,7 @@
 
   <div class="max-w-6xl mx-auto px-4 py-4">
     <p class="text-center text-gray-500 dark:text-gray-400 text-sm">
-      ViaConecta © 2025 Todos los derechos reservados.
+      {t.footer.derechos}
     </p>
   </div>
 </footer>

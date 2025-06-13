@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import es from '../../locales/es.json';
+import en from '../../locales/en.json';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } }
+  ];
+}
+
+const lang = Astro.params.lang || 'es';
+const t = lang === 'en' ? en : es;
+---
+
+<Layout>
+  <main class="flex flex-col items-center px-4 py-20 space-y-16 bg-[#f5f7fa] dark:bg-[#121212] text-gray-800 dark:text-gray-200 font-sans">
+
+    <!-- Encabezado -->
+    <section class="animate-in fade-in duration-700 w-full max-w-3xl bg-white dark:bg-gray-900 rounded-2xl shadow-xl border-t-4 border-orange-500 dark:border-orange-400 p-8">
+      <div class="h-1 w-16 bg-orange-500 dark:bg-orange-400 rounded-full mb-4 mx-auto"></div>
+      <h1 class="text-4xl font-extrabold text-blue-800 dark:text-orange-400 text-center mb-4">{t.politica.title}</h1>
+      <p class="text-center text-lg text-gray-600 dark:text-gray-300">{t.politica.privacidad}</p>
+    </section>
+
+    <!-- Secciones -->
+    <section class="w-full max-w-3xl space-y-10 text-base leading-relaxed">
+
+      <div class="fade-in duration-500 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-md dark:shadow-md">
+        <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-2 border-b-2 border-orange-500 dark:border-orange-400 inline-block">{t.politica.datosTitle}</h2>
+        <p class="text-gray-700 dark:text-gray-300">{t.politica.datos}</p>
+      </div>
+
+      <div class="fade-in duration-500 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-md dark:shadow-md">
+        <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-2 border-b-2 border-orange-500 dark:border-orange-400 inline-block">{t.politica.usoTitle}</h2>
+        <p class="text-gray-700 dark:text-gray-300">{t.politica.uso}</p>
+      </div>
+
+      <div class="fade-in duration-500 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-md dark:shadow-md">
+        <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-2 border-b-2 border-orange-500 dark:border-orange-400 inline-block">{t.politica.cookiesTitle}</h2>
+        <p class="text-gray-700 dark:text-gray-300">{t.politica.cookies}</p>
+      </div>
+
+      <div class="fade-in duration-500 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-md dark:shadow-md">
+        <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-2 border-b-2 border-orange-500 dark:border-orange-400 inline-block">{t.politica.derechosTitle}</h2>
+        <p class="text-gray-700 dark:text-gray-300" set:html={t.politica.derechos} />
+      </div>
+
+      <div class="fade-in duration-500 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-md dark:shadow-md">
+        <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-2 border-b-2 border-orange-500 dark:border-orange-400 inline-block">{t.politica.seguridadTitle}</h2>
+        <p class="text-gray-700 dark:text-gray-300">{t.politica.seguridad}</p>
+      </div>
+
+      <div class="fade-in duration-500 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow-md dark:shadow-md">
+        <h2 class="text-2xl font-bold text-blue-800 dark:text-orange-400 mb-2 border-b-2 border-orange-500 dark:border-orange-400 inline-block">{t.politica.contactoTitle}</h2>
+        <p class="text-gray-700 dark:text-gray-300" set:html={t.politica.contacto} />
+      </div>
+
+    </section>
+  </main>
+</Layout>

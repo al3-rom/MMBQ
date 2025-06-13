@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import es from '../../locales/es.json';
+import en from '../../locales/en.json';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } }
+  ];
+}
+
+const lang = Astro.url.pathname.startsWith('/en') ? 'en' : 'es';
+const t = lang === 'en' ? en : es;
+---
+
+<Layout>
+  <main class="flex flex-col items-center px-4 py-20 space-y-16 bg-[#f5f7fa] dark:bg-[#121212] overflow-hidden font-sans">
+    <section class="animate-in fade-in slide-in-from-bottom duration-700 w-full max-w-3xl bg-white dark:bg-gray-900 rounded-2xl shadow-xl border-t-4 border-orange-500 dark:border-orange-400 p-8 text-center">
+      <div class="h-1 w-16 bg-orange-500 dark:bg-orange-400 rounded-full mb-4 mx-auto"></div>
+      <h1 class="text-4xl font-extrabold text-blue-800 dark:text-orange-400 tracking-tight mb-4">
+        {t.noticias.title}
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-light" set:html={t.noticias.desc}></p>
+    </section>
+  </main>
+</Layout>

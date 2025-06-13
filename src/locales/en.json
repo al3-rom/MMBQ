@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "noticias": "News",
+    "tarifas": "Plans",
+    "socios": "Partners",
+    "sobreNosotros": "About Us",
+    "privacidad": "Privacy Policy",
+    "temaOscuro": "🌙 Dark mode",
+    "temaClaro": "🌞 Light mode",
+    "idioma": "Language"
+  },
+  "footer": {
+    "descripcion": "MBBQ, your new MVNO in Bogotá.",
+    "enlaces": "Links",
+    "contacto": "Contact",
+    "email": "Email",
+    "derechos": "MBBQ © 2025 All rights reserved."
+  },
+  "index": {
+    "heroTitle": "Connect without limits with MBBQ!",
+    "heroDesc": "Innovative mobile plans with <strong>zero-rating</strong>, <strong>cashback</strong>, and national coverage in Bogotá. At MBBQ, we believe in <span class=\"underline decoration-orange-400/50\">accessible and hassle-free</span> connectivity for everyone.",
+    "misionTitle": "Our Mission",
+    "misionDesc": "We revolutionize connectivity in Bogotá with <strong>unique plans</strong>, <strong>QR codes</strong>, and <strong>personalized benefits</strong> that fit your lifestyle.",
+    "visionTitle": "Our Vision",
+    "visionDesc": "Connecting people in Latin America with <strong>accessible technology</strong> that creates opportunities and transforms communities.",
+    "valoresTitle": "Our Values",
+    "innovacion": {
+      "title": "Innovation",
+      "desc": "We create mobile solutions that simplify and amaze."
+    },
+    "accesibilidad": {
+      "title": "Accessibility",
+      "desc": "Barrier-free technology. Connectivity for everyone, anytime."
+    },
+    "sostenibilidad": {
+      "title": "Sustainability",
+      "desc": "We build a responsible, ethical, and lasting digital future."
+    }
+  },
+  "noticias": {
+    "title": "MBBQ News",
+    "desc": "<span class=\"font-medium\">Exciting news coming soon!</span> Stay tuned for updates about the launch of <span class=\"underline decoration-orange-400/50\">MBBQ</span> in <strong class=\"text-blue-800 dark:text-orange-300\">2025</strong>."
+  },
+  "tarifas": {
+    "title": "Plans",
+    "desc": "Discover our upcoming mobile plans designed for Bogotá. Rates with <strong>zero-rating</strong>, <strong>cashback</strong>, and exclusive benefits. Available in 2025. Stay connected!",
+    "planesTitle": "Our Future Plans",
+    "planesDesc": "Check out the plans we are preparing for the official launch.",
+    "aviso": "These are example plans. Final details will be confirmed in 2025*.",
+    "planBasico": {
+      "title": "Basic Plan",
+      "desc": "Essential connectivity, hassle-free.",
+      "features": [
+        "1 GB of data with zero-rating for selected apps",
+        "100 minutes of local calls",
+        "5% cashback on top-ups"
+      ]
+    },
+    "planEstandar": {
+      "title": "Standard Plan",
+      "desc": "Ideal for social media, content, and calls.",
+      "features": [
+        "5 GB of data with zero-rating for selected apps",
+        "300 minutes of local calls",
+        "10% cashback on top-ups"
+      ]
+    },
+    "planPremium": {
+      "title": "Premium Plan",
+      "desc": "Maximum connectivity for professionals and travelers.",
+      "features": [
+        "10 GB of data with zero-rating for selected apps",
+        "Unlimited local calls",
+        "15% cashback on top-ups"
+      ]
+    },
+    "preliminar": "*Preliminary rate, subject to change.",
+    "suscribirme": "Subscribe to {{plan}}!"
+  },
+  "politica": {
+    "title": "Privacy Policy",
+    "privacidad": "Your privacy is our priority.",
+    "datosTitle": "Data Collection",
+    "datos": "At MBBQ we collect data such as your email to improve our services, send you news, and manage subscriptions. This collection is done under your explicit consent, complying with Colombian Law 1581 of 2012 and the European GDPR.",
+    "usoTitle": "Data Use",
+    "uso": "We use your data to personalize your experience, manage communications, and improve site performance. We do not share your data with third parties without your authorization, except when legally required.",
+    "cookiesTitle": "Use of Cookies",
+    "cookies": "We use cookies to improve your navigation and analyze site traffic. You can manage them from our cookies notice. Analytical cookies are only activated with your consent.",
+    "derechosTitle": "Your Rights",
+    "derechos": "You can access, correct, or delete your data, as well as revoke your consent. You can also request data portability or file a complaint with a data protection authority. Write to us at <a href=\"mailto:info@MBBQ.com\" class=\"text-blue-800 dark:text-orange-400 hover:underline\">info@MBBQ.com</a>.",
+    "seguridadTitle": "Data Security",
+    "seguridad": "We protect your data through SSL encryption, secure authentication, and access controls. We regularly review our practices to ensure your security.",
+    "contactoTitle": "Contact",
+    "contacto": "If you have questions about this policy or the use of your data, you can write to us at <a href=\"mailto:info@MBBQ.com\" class=\"text-blue-800 dark:text-orange-400 hover:underline\">info@MBBQ.com</a>. We respond within a maximum of 15 business days."
+  },
+  "sobre": {
+    "title": "About MBBQ",
+    "desc": "We are a virtual mobile operator (MVNO) redefining connectivity in Bogotá through smart plans, exclusive benefits, and an innovative vision of the digital future.",
+    "historiaTitle": "Our History",
+    "historia": "Founded in 2025, MBBQ was born with a clear mission: to transform mobile access by combining advanced technology, simplicity, and real benefits like zero-rating and rewards for usage. We want to change how people connect and benefit from the digital world.",
+    "equipoTitle": "Our Team",
+    "equipo": "We are a young, multidisciplinary team driven by innovation. From telecom experts to digital creatives, we all share the same passion: bringing technology closer to people and building a more connected, fair, and sustainable future for Latin America."
+  },
+  "socios": {
+    "title": "Partners",
+    "desc1": "At <span class=\"font-semibold text-blue-900 dark:text-orange-400\">MBBQ</span> we are open to <span class=\"italic\">strategic alliances, innovative collaborations</span> and <span class=\"underline decoration-orange-400/50\">investments</span> that drive our joint growth.",
+    "desc2": "If you are a <strong>company, startup, financial entity</strong> or <strong>investor</strong> interested in being part of our vision for smart connectivity in Latin America, <span class=\"font-medium text-blue-700 dark:text-orange-300\">contact us</span>. Let’s talk and build the future together.",
+    "email": "MBBQco@gmail.com"
+  }
+}
